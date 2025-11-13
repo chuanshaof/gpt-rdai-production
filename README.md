@@ -65,7 +65,7 @@ Example response JSON:
 Docker usage:
 1. Build docker image
 ```
-docker build -t gpt-rdai-production
+docker build -t gpt-rdai-production .
 ```
 
 2. Run the container
