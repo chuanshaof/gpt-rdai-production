@@ -6,19 +6,6 @@ It allows you to send text prompts and receive model-generated completions. The 
 
 ---
 
-## **Project Structure**
-llama-api/
-├─ app/
-│ └─ main.py # FastAPI app
-├─ model_loader.py # load Hugging Face model
-├─ requirements.txt # dependencies
-├─ Dockerfile # container instructions
-├─ .gitignore # ignores env, cache, logs
-└─ README.md
-
-
----
-
 ## **Setup & Running Locally**
 
 1. **Clone the repository** (if using git):
@@ -77,7 +64,7 @@ The API will be accessible at http://localhost:8000/docs (Swagger UI).
 
 You can send requests from your browser, curl, Postman, or any HTTP client.
 
-Optional: persist model cache:
+### Optional: persist model cache:
 ```
 docker run -p 8000:8000 \
   -e HUGGINGFACE_TOKEN=$HUGGINGFACE_TOKEN \
